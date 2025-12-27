@@ -1,0 +1,15 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = edgar.treischl
+	email = edgar.treischl@isb.bayern.de
+[core]
+	excludesFile = ~/.gitignore
+	editor = nano
+[color]
+	ui = auto
+[credential]
+	helper = osxkeychain
